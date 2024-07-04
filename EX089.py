@@ -60,7 +60,7 @@ def Disponibilidade(nome):
         else:
             print(f'O livro "\033[1;32m{nome}\033[m" não foi adicionado a bilbioteca!!')
 
-
+##INTERFACEZINHA
 print('-='*30)
 print('\033[4;35mBIBLIOTECA VIRTU\033[m'.center(55))
 print('-='*30)
@@ -77,7 +77,7 @@ while True:
     opc = leiaInt('Sua opção: ')
     while opc > 6 or opc == 0:
         opc = leiaInt('\033[31mOpção inválida.\033[m Sua opção: ')
-
+    ##TESTE LOGICO PARA EXECULTAR A DETERMINADA FUNÇÃO
     if opc == 1:
         livro = Biblioteca(str(input('Nome do livro: ')))
         livro.CadastrarLivro()
@@ -104,5 +104,5 @@ while True:
         pre = str(input('Quer continuar?[ S/N ]: ')).strip().upper()[0]
     if pre == 'N':
         break
-
+##MENSAGEM DE FIM DO PROGRAMA
 print('\033[1;31mPROGRAMA "BIBLIOTECA VIRTU" FOI ENCERRADO. VOLTE SEMPRE!!\033[m')
