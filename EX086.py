@@ -39,7 +39,7 @@ class ContaBancaria:
 
 
     ## MÉTODO PARA DEPOSITAR, QUANTIA É PASSADA COMO PARAMETRO, E O NÚMERO DA CONTA E MOSTRA OS DADOS ATUALIZADOS
-    def Depositar(self, num, quantia):
+    def Depositar(self, num, quantia=0):
         for i in nums_conta:
             if i == num:
                 idx = nums_conta.index(num)
@@ -114,3 +114,5 @@ while True:
 
 ## MENSAGEM DE FIM DO PROGRAMA
 print("\033[31mPROGRAMA ENCERRADO. Volte Sempre!!\033[m")
+
+## TALVEZ ADICIONAR O HISTORICO DE DEPOSITOS E SAQUES (AINDA FALTA ISSO)
